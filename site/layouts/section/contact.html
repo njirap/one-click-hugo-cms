@@ -3,9 +3,12 @@
 <div class="ph3 bg-off-white">
 	<div class="center mw6 pv3">
 
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
+		<h3 class="f4 b lh-title mb1 primary">Newstead</h3>
 
 		{{ .Content }}
+
+		<br/>
+		<br/>
 
 		<div class="flex-ns mb3">
 	        	{{ range .Params.contact_entries }}
@@ -15,6 +18,8 @@
 				</div>
 			{{ end }}
 		</div>
+		<br/>
+		<br/>
 
 		{{ partial "contact-form" . }}
 
